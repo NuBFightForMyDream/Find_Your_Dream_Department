@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลภาควิชา (Theme เปลี่ยนสี) | CUEE Camp</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css"/> 
+    <link rel="stylesheet" href="./assets/css/department_info.css"/> 
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg theme-navbar sticky-top"> 
+          <div class="container">
+              <a class="navbar-brand" href="homepage.html">⚙️ Find Your Dream Department 🌟 </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="homepage.html"> Homepage </a></li>
+                        <li class="nav-item"><a class="nav-link" href="selection_system.html"> การเลือกสาขา </a></li>
+                        <li class="nav-item"><a class="nav-link active" href="department_info.html"> ค้นหาภาควิชา </a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://intaniadepartmentcalculator-nine2general.streamlit.app/" target="_blank"> คำนวณคะเเนนได้ที่นี่ 👇🏻 </a> 
+                        </li>
+                  </ul>
+              </div>
+          </div>
+    </nav>
+        
+    <div class="container py-5"> 
+
+        <div class="text-center mb-4">
+            <h1 class="fw-bold" style="color: #624646;">🔍 ค้นหาภาควิชาที่เหมาะกับตัวน้องๆ </h1>
+            <p> น้องๆ สามารถอ่านข้อมูลและลองนำไปศึกษาประกอบการเลือกสาขาวิชากันดูได้นะครับ 🫡 </p>
+        </div>
+
+        <div class="scrolling-wrapper mb-4" id="buttons-container">
+            </div>
+
+        <div id="display-area">
+            <div class="info-card text-center d-flex flex-column justify-content-center" style="min-height: 400px; --current-theme: #aaa;">
+                <h3 class="text-muted">👈 กรุณาเลือกภาควิชาจากแถบด้านบน</h3>
+            </div>
+        </div>
+
+    </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/department_info.js"></script>
+    
+</body>
+</html>
