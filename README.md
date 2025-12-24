@@ -4,7 +4,6 @@
 - This project was created for 1st year Engineering students to find themselves more about choosing their department.
 
 ## Tech Stack 
-$ tree
 ```bash
 ├── dir1
 │   ├── file11.ext
