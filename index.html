@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Part I : Head of Webpage -->
+<head>
+      <!-- 1.1 Title of Webpage -->
+      <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>⚙️ Homepage | Find Your Dream Department </title>
+        <link rel="icon" type="image/png" href="/assets/img/gear-icon.png">
+
+      <!-- 1.2 Import Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet"/>
+      
+      <!-- 1.3 Theme of Header -->
+      <link rel="stylesheet" href="./assets/css/style.css"/> 
+
+</head>
+
+<body>
+    
+    <!-- Import CSS & Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css"/> 
+
+    <!-- Part 2.1 : Navigation Bar -->
+      <nav class="navbar navbar-expand-lg theme-navbar sticky-top"> 
+          <div class="container">
+              <a class="navbar-brand" href="homepage.html">⚙️ Find Your Dream Department 🌟 </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                        <!-- Active Navbar for current page-->
+                        <li class="nav-item"><a class="nav-link active" href="homepage.html"> Homepage </a></li>
+                        <li class="nav-item"><a class="nav-link" href="selection_system.html"> การเลือกสาขา </a></li>
+                        <li class="nav-item"><a class="nav-link" href="department_info.html"> ค้นหาภาควิชา </a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://intaniadepartmentcalculator-nine2general.streamlit.app/"> คำนวณคะเเนนได้ที่นี่ 👇🏻 </a> 
+                        </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+    <!-- Part 2.2 : Header of webpage -->
+    
+    <!-- Card I : Story of Department Selection -->
+    <section class="py-5">
+        <div class="container">
+            <div class="content-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+                        <img src="./assets/img/intro_to_leagarn.png" class="img-fluid maya-frame zoomable-img"
+                            alt="Curriculum">
+                    </div>
+
+                    <div class="col-lg-7">
+                        <h2 class="section-title"><i class="bi bi-book-half me-2"></i> ⚙️ เรื่องราวเส้นทางความฝันในรั้วปราสาทเเดง </h2>
+                        <p> 
+                            ณ ดินเเดนวิเศษ LEAGARN ⚙️ เเห่งนี้ น้องๆได้เข้ามาพร้อมกับความฝันเเละแพชชั่นอันเเรงกล้าในการพัฒนาศักยภาพของตนเอง
+                            แต่ลึกๆก็เกิดคำถามขึ้นในใจว่า ... "แล้วเราจะพัฒนาศักยภาพของเราให้ไปสู่จุดสูงสุดได้อย่างไรกันนะ 🤔" 
+                        </p>
+                        <p>
+                            ในดินเเดนเเห่งนี้ จะช่วยให้
+                            น้องๆ ได้เลือกเส้นทางการพัฒนาศักยภาพที่มีมากถึง 13 เส้นทาง 🛣️ เเต่ละเส้นทางจะเป็นตัวกำหนด ความฝัน 🌟 โชคชะตา 🍀 และอนาคต 🎯 ของน้องๆ
+                        </p>
+                        <p>
+                            ซึ่งอาจจะมีทั้ง ความผิดหวัง 🥲 ความสำเร็จ 🤩 ความท้อ 🫠 เเต่ทั้งหมดนี้หลอมรวมให้น้องเป็น "ผู้มีศักยภาพ" ที่พร้อมจะเผชิญปัญหาในอนาคต 👟
+                        </p>
+
+                        <p>
+                            ถ้าพร้อมเเล้ว ไปตะลุยเส้นทางนี้กันเลยยย !! 
+                        </p>
+
+                        <div class="d-flex gap-3 mb-3">
+                            <a href="department_info.html" 
+                                class="btn btn-outline-danger rounded-pill btn-sm">
+                                <i class="bi bi-globe me-1"></i> ค้นหาเส้นทางความฝันในดินเเดน LEARGAN
+                            </a>
+                            <a href="selection_system.html"
+                                class="btn btn-outline-danger rounded-pill btn-sm">
+                                <i class="bi bi-globe me-1"></i> ระบบการเลือก Track ของดินเเดน LEARGAN
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card II : Intro to Department Selection System -->
+    <section class="py-5">
+        <div class="container">
+            <div class="content-box">
+                <div class="row">
+                
+                    <div class="col-lg-6">
+                        <h2 class="section-title"><i class="bi bi-book-half me-1"></i> 🔎 ค้นหาเส้นทางภาควิชาที่เหมาะกับตัวเรา </h2>
+                        <p> 
+                            หลังจากที่น้องได้เข้ามาในดินเเดนการพัฒนาศักยภาพเเล้ว น้องสามารถเลือก Track ได้ถึง 13 เส้นทาง โดยมีรายละเอียดเเต่ละ Track ดังนี้ 
+                        </p>
+
+                        <!-- Track Card for each department -->
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> 🖥️ 1. วิศวกรรมคอมพิวเตอร์ (Computer Engineering) </div>
+                            <small class="text-muted"> Keyword : Hardware , Software , Programming </small>
+                        </div>
+
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> ⚡️ 2. วิศวกรรมไฟฟ้า (Electrical Engineering) </div>
+                            <small class="text-muted"> Keyword : ระบบไฟฟ้ากำลัง , การสื่อสารข้อมูล , Electronics , พื้นฐาน Math </small>
+                        </div>
+                        
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> 🏭 3. วิศวกรรมอุตสาหการ (Industrial Engineering) </div>
+                            <small class="text-muted"> Keyword : ระบบการจัดการในโรงงาน , Business , 4 M 1 E </small>
+                        </div>
+
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> ⚙️ 4. วิศวกรรมเครื่องกล (Mechanical Engineering) </div>
+                            <small class="text-muted"> Keyword : ระบบกลไก , เครื่องจักร , การเเก้ปัญหาทางวิศวกรรม </small>
+                        </div>  
+
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> ⛑️ 5. วิศวกรรมโยธา (Civil Engineering) </div>
+                            <small class="text-muted"> Keyword : โครงสร้างอาคาร , การบริหารงานทางโยธา , ระบบการขนส่ง </small>
+                        </div>  
+
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> 🧪 6. วิศวกรรมเคมี (Chemical Engineering) </div>
+                            <small class="text-muted"> Keyword : Process ในโรงงาน , การจัดการสารเคมี , พื้นฐานเคมี </small>
+                        </div>                       
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <!-- Track Card for each department -->
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> 🛢️ 7. วิศวกรรมปิโครเลียม (Petroleum Engineering) </div>
+                            <small class="text-muted"> Keyword : ขุดเจาะน้ำมัน , ทรัพยากรธรรมชาติ </small>
+                        </div>
+
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> 🏎️ 8. วิศวกรรมยานยนต์ (Automotive Engineering) </div>
+                            <small class="text-muted"> Keyword : ระบบยานยนต์ , ระบบกลไกเครื่องจักรในรถยนต์ </small>
+                        </div>
+                        
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> 🧭 9. วิศวกรรมสำรวจ (Survey Engineering) </div>
+                            <small class="text-muted"> Keyword : วิเคราะห์ข้อมูลทางภูมิศาสตร์ , การสำรวจพื้นที่ , GIS GNSS </small>
+                        </div>
+
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> 🪨 10. วิศวกรรมทรัพยากรธรณี (Georesources Engineering) </div>
+                            <small class="text-muted"> Keyword : เหมืองเเร่ , ทรัพยากรธรรมชาติ </small>
+                        </div>  
+
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> ⚛️ 11. วิศวกรรมนิวเคลียร์ (Nuclear & Radiological Engineering) </div>
+                            <small class="text-muted"> Keyword : โรงไฟฟ้านิวเคลียร์ , อุตสาหกรรมนิวเคลียร์ </small>
+                        </div>  
+
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> ⚒️ 12. วิศวกรรมโลหการเเละวัสดุ (Metallurgical Engineering) </div>
+                            <small class="text-muted"> Keyword : วัสดุศาสตร์ , กระบวนการผลิตโลหะเเละวัสดุ </small>
+                        </div>  
+
+                        <div class="track-card">
+                            <div class="track-title"><i class="bi bi-cpu-fill me-2"></i> 🌱 13. วิศวกรรมสิ่งเเวดล้อม (Environmental Engineering) </div>
+                            <small class="text-muted"> Keyword : การจัดการของเสีย , Sustainability </small>
+                        </div>  
+                        
+                        <!-- Navigation to "Department Info" Tab -->
+                        <p> หรือหากน้องคนไหนสนใจรายละเอียดเพิ่มเติม สามารถลองค้นหา Track ที่ชอบ ภาควิชาที่ใช่ ได้ผ่านลิ้งค์ด้านล่างนี้เลยยย 👇🏻 </p>
+                        <div class="d-flex gap-3 mb-3">
+                            <a href="department_info.html" target="_blank"
+                                class="btn btn-outline-danger rounded-pill btn-sm">
+                                <i class="bi bi-globe me-1"></i> ค้นหา Track ที่ชอบ ภาควิชาที่ใช่ 🌟
+                            </a>
+                            <a href="https://youtube.com/playlist?list=PLlyQnjvo1_oL517ZYWdcplfBa0O2iU61n&si=0UiZ2RYYE76dc1al" target="_blank"
+                                class="btn btn-outline-danger rounded-pill btn-sm">
+                                <i class="bi bi-globe me-1"></i> คลิป Open House วิศวะจุฬา ⚙️
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </body>
+
+</html>
