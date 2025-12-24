@@ -5,7 +5,7 @@
 
 ## Tech Stack 
 $ tree
-.
+```bash
 ├── dir1
 │   ├── file11.ext
 │   └── file12.ext
@@ -16,6 +16,7 @@ $ tree
 ├── dir3
 ├── file_in_root.ext
 └── README.md
+```
 
 3 directories, 7 files
 Responsive Web application for Intania 109 to know more about departments info.
