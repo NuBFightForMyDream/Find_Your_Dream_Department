@@ -904,7 +904,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="row">
                     <div class="col-12 mb-3">
                         <h4 class="fw-bold" style="color: ${data.color}">
-                            <i class="bi bi-megaphone-fill me-2"></i>กิจกรรมต่างๆที่เกี่ยวกับภาควิชา 
+                            <i class="bi bi-megaphone-fill me-2"></i>กิจกรรม และ Facilities ต่างๆที่เกี่ยวกับภาควิชา 
                         </h4>
                     </div>
                         ${activitiesHTML}
