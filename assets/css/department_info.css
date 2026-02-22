@@ -1,0 +1,135 @@
+:root {
+    --maya-cream: #F7DCB9;
+    --maya-sand: #DEAC80;
+    --current-theme: #5d866c; /* ค่า Default เดี๋ยว JS จะมาแก้ตัวนี้ */
+    --blood-dark-red : #a10000e2;
+    --blood-low-red : #f89191;
+    --black : #000000;
+    --white : #ffffff;
+    --brown : #5d2902;
+    --green : #025d13;
+    --yellow : #ffea00;
+    --maya-sand : #deac80; 
+    --light-brown : #e8cbae; 
+    --light-cream : #fdf8f2; 
+}
+
+body {
+    background-color: var(--light-cream);
+    font-family: 'Prompt', sans-serif;
+    background-image: radial-gradient(var(--blood-dark-red) 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #333;
+    transition: background 0.5s ease;
+}
+
+/* ==================== Horizontal Menu (Top Bar) ==================== */
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* ให้ลื่นบนมือถือ */
+    padding-bottom: 15px;
+    gap: 10px;
+    /* ซ่อน Scrollbar แตยังเลื่อนได้ */
+    scrollbar-width: thin;
+    scrollbar-color: var(--maya-sand) transparent;
+}
+
+/* ปุ่มเลือกภาควิชา */
+.dept-btn {
+    flex: 0 0 auto; /* ไม่ให้ปุ่มหด */
+    background: rgba(255,255,255,0.8);
+    border: 2px solid transparent; /* เตรียมขอบไว้ */
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+    color: #555;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.dept-btn:hover {
+    transform: translateY(-2px);
+    background: white;
+}
+
+/* สถานะ Active (จะถูกเติมสีด้วย JS) */
+.dept-btn.active {
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+/* ==================== Info Card (Dynamic Color) ==================== */
+.info-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    /* ใช้ตัวแปร --current-theme เพื่อเปลี่ยนสีขอบ */
+    border: 4px solid var(--current-theme); 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.5s ease;
+}
+
+/* แถบสีคาดหัวการ์ด */
+.card-header-strip {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 15px;
+    background-color: var(--current-theme);
+    transition: background-color 0.5s ease;
+}
+
+.dept-title {
+    color: var(--current-theme);
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+
+.section-box {
+    background: #f8f9fa;
+    border-left: 5px solid var(--current-theme); /* เส้นข้างเปลี่ยนสีได้ */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: border-color 0.5s ease;
+}
+
+.btn-action {
+    background-color: var(--current-theme);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s;
+}
+
+.btn-action:hover {
+    background-color: #333;
+    color: white;
+}
+
+.fade-in { animation: fadeIn 0.5s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* การ์ด Track ย่อย */
+.sub-track-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    border-left: 4px solid var(--current-theme); /* สีขอบเปลี่ยนตามภาค */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.sub-track-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Part I : Head of Webpage -->
+<head>
+      <!-- 1.1 Title of Webpage -->
+      <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>🧮 Selection System | Find Your Dream Department</title>
+        <link rel="icon" type="image/png" href="/assets/img/gear-icon.png">
+
+      <!-- 1.2 Import Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet"/>
+      
+      <!-- 1.3 Theme of Header -->
+      <link rel="stylesheet" href="./assets/css/style.css"/> 
+
+</head>
+
+<body>
+    
+    <!-- Import CSS Theme -->
+    <link rel="stylesheet" href="./assets/css/style.css"/> 
+
+    <!-- Part 2.1 : Navigation Bar -->
+      <nav class="navbar navbar-expand-lg theme-navbar sticky-top"> 
+          <div class="container">
+              <a class="navbar-brand" href="index.html">⚙️ Find Your Dream Department 🌟 </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                        <!-- Active Navbar for current page-->
+                        <li class="nav-item"><a class="nav-link" href="homepage.html"> Homepage </a></li>
+                        <li class="nav-item"><a class="nav-link active" href="selection_system.html"> การเลือกสาขา </a></li>
+                        <li class="nav-item"><a class="nav-link" href="department_info.html"> ค้นหาภาควิชา </a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://intaniadepartmentcalculator-nine2general.streamlit.app/"> คำนวณคะเเนนได้ที่นี่ 👇🏻 </a> 
+                        </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+    <!-- Part 2.2 : Header of webpage -->
+    
+    <!-- Card I : Department Selection System -->
+    <section class="py-5">
+        <div class="container">
+            <div class="content-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0 text-center order-2">
+                        <img src="./assets/img/department_selection.png" class="img-fluid maya-frame zoomable-img"
+                            alt="Curriculum">
+                    </div>
+
+                    <div class="col-lg-7">
+                        <h2 class="section-title"><i class="bi bi-book-half me-2"></i> 🧮 ระบบการเลือกสาขาวิชา </h2>
+                        <p> 
+                            หลังจากที่น้องๆได้เข้ามาสู่ดินเเดนวิเศษเเห่งนี้เเล้ว สิ่งที่นับว่ายากและท้าทายที่จะเข้าใจ ก็คือ "ระบบการเลือกสาขาวิชา" ครับผม 
+                        </p>
+                        <p>
+                            โดยหลักการหลักๆคือ ทำเกรดในรายวิชาพื้นฐานทั้งหมด 4 กลุ่ม ดังรูป จากนั้นจะทำการคำนวณคะเเนน (เเต่คิดคล้ายๆเกรดนะ) เพื่อจะได้คะเเนนรวมออกมานั่นเองครับ
+                        </p>
+                        <p>
+                            โดยคะเเนนจะถูกคิดในทุกๆสาขา และจะนำไป Ranking 🏆 จากนั้นเราจะทำการเลือกสาขาผ่านฟอร์มของทะเบียนคณะฯ ครับ
+                        </p>
+
+                        <p> ซึ่งพี่ได้นำความรู้จากรายวิชาตอนปี 1 ที่เรียนคือ 2110101 COMPUTER PROGRAMMING นำมาประยุกต์
+                            เเละสร้างเป็นโปรเเกรมคำนวณคะเเนนเลือกสาขาครับผม โดยน้องๆสามารถลองใช้ผ่านลิ้งค์ด้านล่างได้เลยย  
+                        </p>
+
+                        <!-- Link to Intania Department Calculator 2025 -->
+                        <div class="d-flex gap-3 mb-3">
+                            <a href="https://intaniadepartmentcalculator-nine2general.streamlit.app/" target="_blank"
+                                class="btn btn-outline-danger rounded-pill btn-sm">
+                                <i class="bi bi-globe me-1"></i> Intania Department Calulator 2025
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card II : Changing Major System -->
+    <section class="py-5">
+        <div class="container">
+            <div class="content-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0 text-center"> <!-- order-2 for swap side -->
+                        <img src="./assets/img/changing_major.png" class="img-fluid maya-frame zoomable-img"
+                            alt="Curriculum">
+                    </div>
+
+                    <div class="col-lg-7">
+                        <h2 class="section-title"><i class="bi bi-book-half me-2"></i> ↔️ การย้ายสาขาวิชา </h2>
+                        <p> 
+                            น้องๆอาจจะฟังเเล้วค่อนข้างงงกันพอสมควรว่ามันคืออะไร เเต่หลังจากที่เราทำการเลือกสาขากันเเล้ว เชื่อว่าไม่น้อยที่อาจจะมีผิดหวังกับการเลือกสาขา
+                            เช่น อาจจะไม่ได้ภาคที่ต้องการ 😭 ทางคณะเลยมีสิ่งนี้เพื่อที่จะช่วยให้น้องๆยังสามารถเดินตามเส้นทางความฝันได้อีกครั้งหนึ่งครับ 
+                        </p>
+                        <p>
+                            โดยหลักการหลักๆคือ ผ่านเงื่อนไขตามที่ทะเบียนคณะฯ ประกาศเอาไว้ ‼️ หากไม่ถึงจะไม่สามารถย้ายได้เด็ดขาด ‼️
+                        </p>
+                        <p>
+                            โดยกลุ่มที่จะมีสิทธิ์ย้ายสาขา จะต้องผ่านการเลือกสาขาตอนปี 1 (วิศวกรรมทั่วไป) ก่อนนะครับ และสามารถเริ่มย้ายได้เมื่อจบ ปี 2 เทอม 1 เป็นต้นไปครับ
+                        </p>
+
+                        <p> ขอเน้นย้ำว่าให้ลงทะเบียนเรียนเรียนตามที่ภาควิชาเดิมกำหนดนะครับผม เพื่อลดปัญหาในการจบการศึกษา และในเเต่ละปีเกณฑ์มีการเปลี่ยนเเปลง 
+                            เพราะฉะนั้นให้ติดตามเเค่เฉพาะเทอมที่จะย้ายเท่านั้นครับ
+                        </p>
+
+                        <!-- Link to Intania Department Calculator 2025 -->
+                        <div class="d-flex gap-3 mb-3">
+                            <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid049dNvHf32fjUwYLTdxzZRXQxBrBcjN9VfwZWKN5VzLpR4gmBqmw3ncq1qhdaDYHAl&id=100057599554688&rdid=hKoHykL1V3IhNQcS" target="_blank"
+                                class="btn btn-outline-danger rounded-pill btn-sm">
+                                <i class="bi bi-globe me-1"></i> เกณฑ์การย้ายสาขาวิชา 2568 เทอมต้น ไป เทอมปลาย จากทะเบียนคณะฯ
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </body>
+
+    <!-- Import JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</html>

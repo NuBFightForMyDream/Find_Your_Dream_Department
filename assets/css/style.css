@@ -1,0 +1,308 @@
+/* Part I : Theme */
+:root {
+    --blood-dark-red : #a10000e2;
+    --blood-low-red : #f89191;
+    --black : #000000;
+    --white : #ffffff;
+    --brown : #5d2902;
+    --green : #025d13;
+    --yellow : #ffea00;
+    --maya-sand : #deac80; 
+    --light-brown : #e8cbae; 
+    --light-cream : #fdf8f2; 
+}
+
+body {
+    background-color: var(--light-cream) ;
+    /* Floral White */
+    color: var(--black); /* letter color */
+    font-family: 'Prompt', sans-serif;
+    background-image: radial-gradient(var(--blood-dark-red) 1px , transparent 1px) ; 
+    margin: 0;
+    padding: 0;
+    background-size : 20px 20px ;
+}
+
+/* Part II : Navigation Bar */
+
+/* 2.1 : Background of Navigation Bar*/
+.theme-navbar { /* navbar-theme */ 
+    /* Purpose : Decorate Navigation Bar Theme */
+    background-color: var(--blood-dark-red); /* Background of Nav Tab*/
+    /* border-bottom: 4px solid var(--yellow); */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand { /* navbar-topic */
+    /* Purpose : Decorate Navigation Topic */
+    color: var(--white) !important; /* Find your dream Department : color */
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.nav-link { /* navbar-letter */
+    /* Purpose : Decorate Navigation Tab Letter */
+    color: var(--white) !important; /* Letter on nav tabs */
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    /* Pill shape */
+    transition: all 0.3s ease;
+}
+
+/* navbar-box-hover */ 
+    /* Purpose : Decorate Box on Navigation Tabs*/
+.nav-link:hover,
+.nav-link.active {
+    background-color: var(--green); /* Box on Nav Tabs */
+    color: #fff !important; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Toggler (Mobile) */
+.navbar-toggler {
+    border-color: var(--black);
+}
+
+.navbar-toggler-icon {
+    /* SVG สีน้ำตาลเข้ม */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(98, 70, 70, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* =========================================
+   3. Hero Carousel (Clean & Pop)
+   ========================================= */
+.hero-carousel-item {
+    height: 85vh;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--maya-brown-dark);
+}
+
+/* Background Blur Layer */
+.bg-blur-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(20px) brightness(0.9);
+    z-index: 0;
+    transform: scale(1.1);
+    /* ขยายเพื่อซ่อนขอบเบลอ */
+}
+
+/* Main Image Container */
+.main-img-container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    padding-bottom: 100px;
+    /* เว้นที่ให้ Caption ด้านล่าง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-main-img {
+    max-height: 88%;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+
+    /* กรอบขาวบางๆ + เงาฟุ้ง */
+    border: 6px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   4. Caption (The Jungle Sticker Box)
+   ========================================= */
+.theme-caption {
+    position: absolute;
+    bottom: 30px;
+    /* ลอยอยู่เหนือขอบล่าง */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 90%;
+    max-width: 800px;
+    padding: 1.5rem 2rem;
+
+    background-color: var(--maya-green);
+    border-radius: 20px;
+    border: 3px solid var(--maya-cream);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+    color: #fff;
+}
+
+.theme-caption h2 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    text-shadow: none;
+}
+
+.theme-caption p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--maya-cream);
+    margin-bottom: 0;
+}
+
+/* =========================================
+   5. Controls & Indicators
+   ========================================= */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+    opacity: 0.8;
+    z-index: 20;
+    /* ให้อยู่เหนือ Caption */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 50%;
+}
+
+/* Indicators (Diamond Shape) */
+.carousel-indicators [data-bs-target] {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    opacity: 0.5;
+    border: none;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: var(--maya-sand);
+    transform: rotate(45deg) scale(1.4);
+}
+
+.theme-footer {
+    background-color: var(--maya-brown-dark, #2d2424) !important;
+    border-top: 6px solid var(--maya-brown-red, #914F1E);
+    color: #fff;
+}
+
+.maya-social-btn {
+    width: 50px;
+    height: 50px;
+    background-color: var(--maya-brown-red, #914F1E);
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.maya-social-btn:hover {
+    transform: translateY(-5px);
+    background-color: var(--maya-sage, #B5C18E);
+    color: var(--maya-brown-dark, #2d2424) !important;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.theme-footer i {
+    color: white;
+}
+
+/* Part III ; Content Element */
+
+.section-title {
+    color: var(--black);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.content-box {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid var(--blood-low-red);
+    box-shadow: 0 10px 20px rgba(98, 70, 70, 0.1);
+}
+
+/* Image Frame Effect */
+.maya-frame {
+    border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0 var(--maya-sand);
+    transition: transform 0.3s;
+}
+
+.maya-frame:hover {
+    transform: scale(1.02) rotate(1deg);
+}
+
+/* Custom Button */
+.btn-maya {
+    background-color: var(--maya-brown-red);
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(145, 79, 30, 0.4);
+    transition: all 0.3s;
+}
+
+.btn-maya:hover {
+    background-color: var(--maya-green);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(93, 134, 108, 0.5);
+}
+
+/* Fun Fact Box */
+.fun-fact-box {
+    background-color: var(--maya-sage);
+    color: var(--maya-brown-dark);
+    border-radius: 15px;
+    padding: 20px;
+    border-left: 6px solid var(--maya-green);
+    margin-top: 20px;
+}
+
+/* Track Card (Curriculum) */
+.track-card {
+    background-color : var(--light-cream);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid var(--maya-brown-red);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.track-title {
+    font-weight: bold;
+    color: var(--maya-brown-red);
+}
+
